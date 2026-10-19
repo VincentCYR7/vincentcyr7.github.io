@@ -1,1 +1,344 @@
-<h1>hello world!</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vincent Chen - Game Programmer Portfolio">
+  <title>Vincent Chen | Game Programmer</title>
+
+  <style>
+    :root {
+      --bg: #0c0e13;
+      --surface: #171b24;
+      --text: #f1f3f8;
+      --muted: #a0a7b5;
+      --accent: #8eaaff;
+      --border: #2b3240;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .container {
+      max-width: 1050px;
+      margin: auto;
+      padding: 0 24px;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      background: rgba(12,14,19,.95);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 70px;
+    }
+
+    .logo { font-size: 20px; font-weight: 800; }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .nav-links a:hover, a:hover { color: var(--accent); }
+
+    section { padding: 85px 0; }
+
+    .hero { padding: 125px 0 110px; }
+
+    .eyebrow {
+      color: var(--accent);
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+
+    h1 {
+      font-size: clamp(44px, 8vw, 80px);
+      line-height: 1.1;
+      letter-spacing: -2px;
+      margin: 15px 0;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin: 0 0 25px;
+    }
+
+    h3 { margin: 0 0 10px; }
+
+    p { color: var(--muted); }
+
+    .intro {
+      font-size: 19px;
+      max-width: 650px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .button {
+      padding: 12px 22px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-weight: 600;
+      transition: .2s;
+    }
+
+    .button.primary {
+      background: var(--accent);
+      color: #0c0e13;
+      border-color: var(--accent);
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      opacity: .85;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    .card-content { padding: 25px; }
+
+    .project-image {
+      height: 190px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #26334f, #171b24);
+      color: var(--accent);
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .tag {
+      font-size: 12px;
+      color: var(--accent);
+      background: #263149;
+      padding: 5px 11px;
+      border-radius: 5px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill {
+      padding: 10px 17px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+
+    footer {
+      padding: 30px 0;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      text-align: center;
+    }
+
+    @media (max-width: 650px) {
+      .grid { grid-template-columns: 1fr; }
+      .nav-links { gap: 12px; font-size: 12px; }
+      section { padding: 55px 0; }
+      .hero { padding: 85px 0; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="container">
+      <a href="#" class="logo">VC.</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="eyebrow">Game Programmer / Developer</div>
+      <h1>Vincent Chen<span style="color:var(--accent)">.</span></h1>
+      <p class="intro">
+        I build interactive experiences through gameplay programming,
+        game systems, and creative problem-solving.
+      </p>
+      <div class="buttons">
+        <a class="button primary" href="#projects">View My Work</a>
+        <a class="button"
+           href="https://github.com/VincentCYR7"
+           target="_blank" rel="noopener noreferrer">
+          GitHub Profile
+        </a>
+      </div>
+    </section>
+
+    <section id="about" class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm a game programming student at Tokyo Design Technology
+        Center (TECH.C.), with experience developing games in Unity,
+        Unreal Engine, and C++ frameworks.
+      </p>
+      <p>
+        My interests include gameplay mechanics, physics-based systems,
+        and building engaging interactive experiences.
+      </p>
+    </section>
+
+    <section id="projects" class="container">
+      <h2>Featured Projects</h2>
+
+      <div class="grid">
+        <article class="card">
+          <div class="project-image">KUROMU</div>
+          <div class="card-content">
+            <h3>Kuromu</h3>
+            <p>
+              A 2D platforming project featuring charged jumps,
+              custom player movement, animation systems,
+              and environmental effects.
+            </p>
+            <div class="tags">
+              <span class="tag">Unity</span>
+              <span class="tag">C#</span>
+              <span class="tag">2D</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="project-image">UFO PROJECT</div>
+          <div class="card-content">
+            <h3>UFO Simulation</h3>
+            <p>
+              A C++ and Ogre3D project featuring entity spawning,
+              terrain interaction, AI behaviors, and gameplay systems.
+            </p>
+            <div class="tags">
+              <span class="tag">C++</span>
+              <span class="tag">Ogre3D</span>
+              <span class="tag">AI</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="project-image">RACING GAME</div>
+          <div class="card-content">
+            <h3>Racing Prototype</h3>
+            <p>
+              A physics-based racing prototype featuring vehicle
+              controls, camera modes, and split-screen gameplay.
+            </p>
+            <div class="tags">
+              <span class="tag">Unity</span>
+              <span class="tag">C#</span>
+              <span class="tag">Physics</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="project-image">MORE PROJECTS</div>
+          <div class="card-content">
+            <h3>More Coming Soon</h3>
+            <p>
+              Additional projects, gameplay demonstrations,
+              and technical breakdowns will be added here.
+            </p>
+            <div class="tags">
+              <span class="tag">Game Development</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="container">
+      <h2>Technical Skills</h2>
+      <div class="skills">
+        <span class="skill">C++</span>
+        <span class="skill">C#</span>
+        <span class="skill">Java</span>
+        <span class="skill">Unity</span>
+        <span class="skill">Unreal Engine 5</span>
+        <span class="skill">Ogre3D</span>
+        <span class="skill">Siv3D</span>
+        <span class="skill">Git / GitHub</span>
+      </div>
+    </section>
+
+    <section id="contact" class="container">
+      <h2>Let's Connect</h2>
+      <p>
+        Interested in my work? You can explore my repositories
+        and development projects on GitHub.
+      </p>
+      <div class="buttons">
+        <a class="button primary"
+           href="https://github.com/VincentCYR7"
+           target="_blank" rel="noopener noreferrer">
+          Visit GitHub
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      &copy; 2026 Vincent Chen. Built with GitHub Pages.
+    </div>
+  </footer>
+</body>
+</html>
