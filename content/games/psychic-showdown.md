@@ -9,6 +9,15 @@ Webポートフォリオ: https://kiliken.github.io/TGS25/
 
 詳細な実装内容については、上記のポートフォリオをご覧ください。
 
+
 ## Gameplay Video
 
-<iframe class="ytframe" src="https://www.youtube.com/embed/?autoplay=1&amp;controls=1&amp;disablekb=1&amp;loop=1&amp;mute=1&amp;playlist=HMy0Zgg9xYg&amp;playsinline=1&amp;rel=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+<iframe
+  width="100%"
+  height="450"
+  src="https://www.youtube.com/embed/HMy0Zgg9xYg"
+  title="Psychic Showdown Gameplay"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
