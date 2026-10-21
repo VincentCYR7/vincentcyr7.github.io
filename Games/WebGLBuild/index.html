@@ -6,8 +6,19 @@
     <title>Unity WebGL Player | MiniGame</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <script defer src="../../assets/vendor/marked/marked.umd.js"></script>
+    <script defer src="../../assets/vendor/dompurify/purify.min.js"></script>
+    <script defer src="../../assets/js/markdown.js"></script>
+    <link rel="stylesheet" href="../../assets/markdown.css">
+    <style>
+      .game-stage { position: relative; height: 680px; }
+      #unity-container.unity-mobile { position: absolute; }
+      .game-description { max-width: 960px; margin: 24px auto; padding: 0 20px; font-family: sans-serif; }
+      @media (max-width: 960px) { .game-stage { height: 100svh; } }
+    </style>
   </head>
   <body>
+    <div class="game-stage">
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
@@ -23,6 +34,11 @@
         <div id="unity-build-title">MiniGame</div>
       </div>
     </div>
+    </div>
+    <section class="game-description" data-markdown="../../content/game.md" aria-busy="true">
+      <p role="status">Loading game description…</p>
+    </section>
+    <noscript><p>Enable JavaScript to play and read the game description.</p></noscript>
     <script>
 
       var container = document.querySelector("#unity-container");

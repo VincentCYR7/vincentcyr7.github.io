@@ -217,6 +217,10 @@
       }
     }
   </style>
+  <script defer src="assets/vendor/marked/marked.umd.js"></script>
+  <script defer src="assets/vendor/dompurify/purify.min.js"></script>
+  <script defer src="assets/js/markdown.js"></script>
+  <link rel="stylesheet" href="assets/markdown.css">
 </head>
 
 <body>
@@ -232,157 +236,22 @@
     </nav>
   </header>
 
+  <noscript><p class="container">Enable JavaScript to read this portfolio.</p></noscript>
   <main>
-    <section class="hero container">
-      <div class="eyebrow">Game Programmer / Developer</div>
-      <h1>Vincent Chen<span style="color:var(--accent)">.</span></h1>
-
-      <p class="intro" style="text-indent: 1em;">
-        ( 陳俞任 / チェン ユウ レン )
-      </p>
-
-      <p class="intro">
-        I'm a game programming student at Tokyo Design Technology
-        Center (TECH.C.), with experience developing games in Unity,
-        Unreal Engine, and C++ frameworks.
-      </p>
-
-      <p class="intro">
-        東京デザインテクノロジーセンター専門学校（TECH.C.）で
-        ゲームプログラミングを学んでいます。
-        Unity、Unreal Engine、C++を用いたフレームワークでの
-        ゲーム開発経験があります。
-      </p>
-
-      <div class="buttons">
-        <a class="button primary" href="#projects">
-          View My Work
-        </a>
-        <a class="button"
-           href="https://github.com/VincentCYR7"
-           target="_blank"
-           rel="noopener noreferrer">
-          GitHub Profile
-        </a>
-      </div>
+    <section class="hero container" data-markdown="content/home/hero.md" aria-busy="true">
+      <p role="status">Loading content…</p>
     </section>
-
-    <section id="projects" class="container">
-      <h2>Featured Projects</h2>
-
-      <div class="grid">
-        <article class="card">
-          <img class="project-image"
-               src="assets/images/games/sin-no-hate.jpg"
-               alt="Sin no hate game artwork"
-               width="1920" height="1080" loading="lazy">
-          <div class="card-content">
-            <h3>Sin no hate</h3>
-          </div>
-        </article>
-
-        <article class="card">
-          <img class="project-image"
-               src="assets/images/games/bousou-kart.jpg"
-               alt="Bousou Kart game artwork"
-               width="1920" height="1080" loading="lazy">
-          <div class="card-content">
-            <h3>Bousou Kart</h3>
-          </div>
-        </article>
-
-        <article class="card">
-          <img class="project-image"
-               src="assets/images/games/psychic-showdown.jpg"
-               alt="Psychic Showdown game artwork"
-               width="1920" height="1080" loading="lazy">
-          <div class="card-content">
-            <h3>Psychic Showdown</h3>
-          </div>
-        </article>
-
-        <article class="card">
-          <img class="project-image"
-               src="assets/images/games/tank-tank-tank.jpg"
-               alt="Tank Tank Tank game artwork"
-               width="1920" height="1080" loading="lazy">
-          <div class="card-content">
-            <h3>Tank Tank Tank</h3>
-          </div>
-        </article>
-
-        <article class="card">
-          <img class="project-image"
-               src="assets/images/games/reikai-revenge.jpg"
-               alt="Reikai Revenge game artwork"
-               width="1920" height="1080" loading="lazy">
-          <div class="card-content">
-            <h3>Reikai Revenge</h3>
-          </div>
-        </article>
-
-        <article class="card">
-          <img class="project-image"
-               src="assets/images/games/kotodama-chronicle.jpg"
-               alt="Kotodama Chronicle game artwork"
-               width="1920" height="1080" loading="lazy">
-          <div class="card-content">
-            <h3>Kotodama Chronicle</h3>
-          </div>
-        </article>
-      </div>
+    <section id="projects" class="container" data-markdown="content/home/projects.md" aria-busy="true">
+      <p role="status">Loading content…</p>
     </section>
-
-    <section id="skills" class="container">
-      <h2>Technical Skills</h2>
-
-      <div class="skills">
-        <span class="skill">C++</span>
-        <span class="skill">C#</span>
-        <span class="skill">Java</span>
-        <span class="skill">Unity</span>
-        <span class="skill">Unreal Engine 5</span>
-        <span class="skill">Ogre3D</span>
-        <span class="skill">Siv3D</span>
-        <span class="skill">Git / GitHub</span>
-      </div>
+    <section id="skills" class="container" data-markdown="content/home/skills.md" aria-busy="true">
+      <p role="status">Loading content…</p>
     </section>
-
-
-
-<section id="about" class="container">
-  <h2>About Me</h2>
-
-  <p>
-    現在、東京デザインテクノロジーセンター専門学校でゲームプログラミングを専攻しています。プログラミングを中心に、ゲームデザイン、イラスト制作、3Dモデリング、ゲーム企画など、ゲーム開発に関わる幅広い分野に関心を持っています。ゲーム制作のさまざまな工程に魅力を感じながら、特にプログラマーとしての専門性を高めることに力を入れています。
-  </p>
-
-  <p>
-    台湾出身で、中国語（台湾華語）と英語を母語とし、日本語でも円滑なコミュニケーションが可能です。日本語能力試験N1に合格しており、TOEICでは990点を取得しています。多言語でのコミュニケーション能力を活かし、国際的な開発環境でも活躍できるゲームプログラマーを目指しています。
-  </p>
-
-  <p>
-    技術面では、C++、C#、Javaを中心に、UnityやUnreal Engine 5を用いた2D・3Dゲームの開発経験があります。また、Siv3DやOgre3Dなどのフレームワークを使用した開発にも取り組んでいます。個人制作だけでなく、チーム開発や東京ゲームショウへの作品出展も経験しており、さまざまな開発環境に柔軟に対応しながら、技術力と問題解決能力の向上に努めています。
-  </p>
-</section>
-
-
-    <section id="contact" class="container">
-      <h2>Let's Connect</h2>
-
-      <p>
-        Interested in my work? You can explore my repositories
-        and development projects on GitHub.
-      </p>
-
-      <div class="buttons">
-        <a class="button primary"
-           href="https://github.com/VincentCYR7"
-           target="_blank"
-           rel="noopener noreferrer">
-          Visit GitHub
-        </a>
-      </div>
+    <section id="about" class="container" data-markdown="content/home/about.md" aria-busy="true">
+      <p role="status">Loading content…</p>
+    </section>
+    <section id="contact" class="container" data-markdown="content/home/contact.md" aria-busy="true">
+      <p role="status">Loading content…</p>
     </section>
   </main>
 
