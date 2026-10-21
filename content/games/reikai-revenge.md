@@ -2,5 +2,4 @@
 
 ## Gameplay Video
 
-<div data-youtube-id="tUoeGtv7pbU&t" data-title="Gameplay Video"></div>
-
+<div data-youtube-id="tUoeGtv7pbU" data-title="Gameplay Video"></div>
