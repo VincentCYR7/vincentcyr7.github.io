@@ -12,6 +12,22 @@
       element.innerHTML = DOMPurify.sanitize(marked.parse(markdown), {
         USE_PROFILES: { html: true }
       });
+      // Create only validated YouTube embeds after sanitizing the Markdown.
+      for (const video of element.querySelectorAll('[data-youtube-id]')) {
+        const id = video.getAttribute('data-youtube-id');
+        if (!/^[A-Za-z0-9_-]{11}$/.test(id)) continue;
+        const start = video.getAttribute('data-start') || '0';
+        if (!/^\d{1,6}$/.test(start)) continue;
+        const frame = document.createElement('iframe');
+        frame.src = `https://www.youtube-nocookie.com/embed/${id}?start=${start}`;
+        frame.title = video.getAttribute('data-title') || 'YouTube video player';
+        frame.loading = 'lazy';
+        frame.referrerPolicy = 'strict-origin-when-cross-origin';
+        frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        frame.allowFullscreen = true;
+        video.classList.add('video-embed');
+        video.replaceChildren(frame);
+      }
       element.removeAttribute('aria-busy');
       element.dispatchEvent(new CustomEvent('markdown:loaded', { bubbles: true }));
     } catch (error) {

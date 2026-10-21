@@ -8,3 +8,9 @@ Webポートフォリオ: https://kiliken.github.io/TGS25/
 ゲーム内容は、2人のプレイヤーが超能力者となり、アリーナ内でアイテムを拾って投げ合いながら対戦します。制限時間終了時にHPが多く残っているプレイヤーが勝者となります。一部のアイテムには特殊な効果があり、戦況を大きく変えることも可能です。たとえば、グレネードは投げると爆発し、ドクロは相手を追尾します。また、マップはプレイごとに自動生成されるため、地形や出現アイテムが毎回変化します。
 
 詳細な実装内容については、上記のポートフォリオをご覧ください。
+
+## Gameplay Video
+
+<div data-youtube-id="HMy0Zgg9xYg" data-start="3" data-title="Psychic Showdown gameplay"></div>
+
+[Watch on YouTube](https://www.youtube.com/watch?v=HMy0Zgg9xYg&t=3s)

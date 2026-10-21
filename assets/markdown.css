@@ -17,3 +17,6 @@
 #skills > ul { display: flex; flex-wrap: wrap; gap: 12px; list-style: none; padding: 0; }
 #skills > ul > li { padding: 10px 17px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; }
 @media (max-width: 650px) { #projects > ul { grid-template-columns: 1fr; } }
+
+.video-embed { width: 100%; aspect-ratio: 16 / 9; margin: 24px 0; }
+.video-embed iframe { display: block; width: 100%; height: 100%; border: 0; border-radius: 8px; }

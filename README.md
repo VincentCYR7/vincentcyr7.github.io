@@ -83,3 +83,17 @@ These pages start with just the game title and “Details coming soon.” A shar
 stylesheet at `assets/game-page.css` matches the portfolio's colors. Markdown
 links and images on these pages need paths relative to `Games/<game>/`; for
 example, `../../assets/images/games/sin-no-hate.jpg`.
+
+
+## Embed a YouTube video
+
+Add this on its own line in any Markdown content file, separated from other
+text by blank lines:
+
+```html
+<div data-youtube-id="HMy0Zgg9xYg" data-start="3" data-title="Psychic Showdown gameplay"></div>
+```
+
+Replace the video ID, starting time in seconds, and accessible title as needed.
+The player scales to the page width and supports fullscreen. Only validated
+YouTube IDs are embedded; arbitrary iframe HTML is still sanitized out.
