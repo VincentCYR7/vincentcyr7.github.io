@@ -4,7 +4,6 @@ Webポートフォリオ: https://kiliken.github.io/TGS25/
 
 
 ## Gameplay Video
-https://www.youtube.com/embed/HMy0Zgg9xYg
 
 <div data-youtube-id="HMy0Zgg9xYg" data-title="Psychic Showdown Gameplay"></div>
 
