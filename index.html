@@ -61,11 +61,21 @@
       font-size: 14px;
     }
 
-    .nav-links a:hover, a:hover { color: var(--accent); }
+    .nav-links a:hover,
+    a:hover {
+      color: var(--accent);
+    }
 
-    section { padding: 85px 0; }
+    /* Section spacing */
+    section {
+      padding-top: 85px !important;
+      padding-bottom: 85px !important;
+    }
 
-    .hero { padding: 125px 0 110px; }
+    .hero {
+      padding-top: 125px !important;
+      padding-bottom: 110px !important;
+    }
 
     .eyebrow {
       color: var(--accent);
@@ -82,9 +92,10 @@
       margin: 15px 0;
     }
 
+    /* Space between titles and content */
     h2 {
       font-size: 32px;
-      margin: 0 0 25px;
+      margin: 0 0 40px;
     }
 
     h3 { margin: 0 0 10px; }
@@ -182,10 +193,28 @@
     }
 
     @media (max-width: 650px) {
-      .grid { grid-template-columns: 1fr; }
-      .nav-links { gap: 12px; font-size: 12px; }
-      section { padding: 55px 0; }
-      .hero { padding: 85px 0; }
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-links {
+        gap: 12px;
+        font-size: 12px;
+      }
+
+      section {
+        padding-top: 55px !important;
+        padding-bottom: 55px !important;
+      }
+
+      .hero {
+        padding-top: 85px !important;
+        padding-bottom: 85px !important;
+      }
+
+      h2 {
+        margin-bottom: 30px;
+      }
     }
   </style>
 </head>
@@ -207,20 +236,32 @@
     <section class="hero container">
       <div class="eyebrow">Game Programmer / Developer</div>
       <h1>Vincent Chen<span style="color:var(--accent)">.</span></h1>
+
       <p class="intro" style="text-indent: 2em;">
         ( 陳俞任 / チェン ユウ レン )
       </p>
+
       <p class="intro">
-        I'm a game programming student at Tokyo Design Technology Center (TECH.C.), with experience developing games in Unity, Unreal Engine, and C++ frameworks.
+        I'm a game programming student at Tokyo Design Technology
+        Center (TECH.C.), with experience developing games in Unity,
+        Unreal Engine, and C++ frameworks.
       </p>
-      <p class = "intro">
-      東京デザインテクノロジーセンター専門学校（TECH.C.）でゲームプログラミングを学んでいます。Unity、Unreal Engine、C++を用いたフレームワークでのゲーム開発経験があります。
+
+      <p class="intro">
+        東京デザインテクノロジーセンター専門学校（TECH.C.）で
+        ゲームプログラミングを学んでいます。
+        Unity、Unreal Engine、C++を用いたフレームワークでの
+        ゲーム開発経験があります。
       </p>
+
       <div class="buttons">
-        <a class="button primary" href="#projects">View My Work</a>
+        <a class="button primary" href="#projects">
+          View My Work
+        </a>
         <a class="button"
            href="https://github.com/VincentCYR7"
-           target="_blank" rel="noopener noreferrer">
+           target="_blank"
+           rel="noopener noreferrer">
           GitHub Profile
         </a>
       </div>
@@ -233,7 +274,6 @@
         Center (TECH.C.), with experience developing games in Unity,
         Unreal Engine, and C++ frameworks.
       </p>
-
     </section>
 
     <section id="projects" class="container">
@@ -241,42 +281,60 @@
 
       <div class="grid">
         <article class="card">
-          <img class="project-image" src="assets/images/games/sin-no-hate.jpg" alt="Sin no hate game artwork" width="1920" height="1080" loading="lazy">
+          <img class="project-image"
+               src="assets/images/games/sin-no-hate.jpg"
+               alt="Sin no hate game artwork"
+               width="1920" height="1080" loading="lazy">
           <div class="card-content">
             <h3>Sin no hate</h3>
           </div>
         </article>
 
         <article class="card">
-          <img class="project-image" src="assets/images/games/bousou-kart.jpg" alt="Bousou Kart game artwork" width="1920" height="1080" loading="lazy">
+          <img class="project-image"
+               src="assets/images/games/bousou-kart.jpg"
+               alt="Bousou Kart game artwork"
+               width="1920" height="1080" loading="lazy">
           <div class="card-content">
             <h3>Bousou Kart</h3>
           </div>
         </article>
 
         <article class="card">
-          <img class="project-image" src="assets/images/games/psychic-showdown.jpg" alt="Psychic Showdown game artwork" width="1920" height="1080" loading="lazy">
+          <img class="project-image"
+               src="assets/images/games/psychic-showdown.jpg"
+               alt="Psychic Showdown game artwork"
+               width="1920" height="1080" loading="lazy">
           <div class="card-content">
             <h3>Psychic Showdown</h3>
           </div>
         </article>
 
         <article class="card">
-          <img class="project-image" src="assets/images/games/tank-tank-tank.jpg" alt="Tank Tank Tank game artwork" width="1920" height="1080" loading="lazy">
+          <img class="project-image"
+               src="assets/images/games/tank-tank-tank.jpg"
+               alt="Tank Tank Tank game artwork"
+               width="1920" height="1080" loading="lazy">
           <div class="card-content">
             <h3>Tank Tank Tank</h3>
           </div>
         </article>
 
         <article class="card">
-          <img class="project-image" src="assets/images/games/reikai-revenge.jpg" alt="Reikai Revenge game artwork" width="1920" height="1080" loading="lazy">
+          <img class="project-image"
+               src="assets/images/games/reikai-revenge.jpg"
+               alt="Reikai Revenge game artwork"
+               width="1920" height="1080" loading="lazy">
           <div class="card-content">
             <h3>Reikai Revenge</h3>
           </div>
         </article>
 
         <article class="card">
-          <img class="project-image" src="assets/images/games/kotodama-chronicle.jpg" alt="Kotodama Chronicle game artwork" width="1920" height="1080" loading="lazy">
+          <img class="project-image"
+               src="assets/images/games/kotodama-chronicle.jpg"
+               alt="Kotodama Chronicle game artwork"
+               width="1920" height="1080" loading="lazy">
           <div class="card-content">
             <h3>Kotodama Chronicle</h3>
           </div>
@@ -286,6 +344,7 @@
 
     <section id="skills" class="container">
       <h2>Technical Skills</h2>
+
       <div class="skills">
         <span class="skill">C++</span>
         <span class="skill">C#</span>
@@ -300,14 +359,17 @@
 
     <section id="contact" class="container">
       <h2>Let's Connect</h2>
+
       <p>
         Interested in my work? You can explore my repositories
         and development projects on GitHub.
       </p>
+
       <div class="buttons">
         <a class="button primary"
            href="https://github.com/VincentCYR7"
-           target="_blank" rel="noopener noreferrer">
+           target="_blank"
+           rel="noopener noreferrer">
           Visit GitHub
         </a>
       </div>
