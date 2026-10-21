@@ -13,12 +13,4 @@ Webポートフォリオ: https://kiliken.github.io/TGS25/
 ## Gameplay Video
 https://www.youtube.com/embed/HMy0Zgg9xYg
 
-<iframe
-  width="100%"
-  height="450"
-  src="https://www.youtube.com/embed/HMy0Zgg9xYg"
-  title="Psychic Showdown Gameplay"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen>
-</iframe>
+<div data-youtube-id="HMy0Zgg9xYg" data-title="Psychic Showdown Gameplay"></div>
