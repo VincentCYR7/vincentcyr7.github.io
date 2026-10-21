@@ -73,8 +73,25 @@
     }
 
     .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(240px, 320px);
+      align-items: center;
+      gap: 40px;
       padding-top: 35px !important;
       padding-bottom: 35px !important;
+    }
+
+    .hero-photo {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    @media (max-width: 800px) {
+      .hero { grid-template-columns: 1fr; gap: 24px; }
+      .hero-photo { max-width: 320px; justify-self: center; }
     }
 
     .eyebrow {
@@ -238,8 +255,11 @@
 
   <noscript><p class="container">Enable JavaScript to read this portfolio.</p></noscript>
   <main>
-    <section class="hero container" data-markdown="content/home/hero.md" aria-busy="true">
-      <p role="status">Loading content…</p>
+    <section class="hero container">
+      <div class="hero-content" data-markdown="content/home/hero.md" aria-busy="true">
+        <p role="status">Loading content…</p>
+      </div>
+      <img class="hero-photo" src="assets/images/portrait.jpg" alt="Vincent Chen holding a camera outdoors" width="681" height="1024">
     </section>
     <section id="projects" class="container" data-markdown="content/home/projects.md" aria-busy="true">
       <p role="status">Loading content…</p>
