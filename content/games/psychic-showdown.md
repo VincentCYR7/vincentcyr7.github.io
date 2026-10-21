@@ -11,6 +11,7 @@ Webポートフォリオ: https://kiliken.github.io/TGS25/
 
 
 ## Gameplay Video
+https://www.youtube.com/embed/HMy0Zgg9xYg
 
 <iframe
   width="100%"
